@@ -188,9 +188,11 @@ Empfohlen: das **arc42-Template** (https://arc42.org/). Standard-Gliederung:
 7. Verteilungssicht
 8. Querschnittliche Konzepte
 9. **Architekturentscheidungen (ADRs)** — siehe unten
-10. Qualitätsanforderungen
-11. Risiken und technische Schulden
+10. ~~Qualitätsanforderungen~~ — **entfällt**
+11. ~~Risiken und technische Schulden~~ — **entfällt**
 12. Glossar
+
+> **Änderung vom 31.08.2026:** Die Kapitel **10 (Qualitätsanforderungen)** und **11 (Risiken und technische Schulden)** entfallen und müssen nicht angefertigt werden. Beide entfalten ihren Nutzen vor allem in Vorhaben, die über eine Laufzeit von einem Semester hinausgehen und in denen sich Qualitätsziele und technische Schulden über mehrere Ausbaustufen hinweg fortschreiben lassen. Die Qualitätsziele des Systems werden ohnehin in Kapitel 1 benannt. Wer die Kapitel bereits geschrieben hat, muss nichts löschen — sie werden weder positiv noch negativ gewertet. Damit umfasst die Architekturdokumentation die Kapitel **1 bis 9 sowie 12**.
 
 #### Architekturentscheidungen (ADRs) — Pflicht
 
