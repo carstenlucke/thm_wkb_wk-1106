@@ -8,6 +8,8 @@
 **Tag (M3):** _<v1.0.0>_  ·  **Commit-SHA:** _<a1b2c3d>_
 **Bewertungsdatum:** _<YYYY-MM-DD>_
 
+> **Bewertungsgegenstand.** Maßgeblich ist der Stand des getaggten Commits auf dem **Hauptbranch** (Default-Branch, `main` bzw. `master`). Inhalte, die zum Abgabezeitpunkt allein auf einem Nebenbranch liegen, werden nicht bewertet — das gilt für Spezifikation, Architektur und Code gleichermaßen (siehe README, Abschnitte 5.2 und 8.3).
+
 ---
 
 ## 1. Säulen-Übersicht

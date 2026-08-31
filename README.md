@@ -136,6 +136,7 @@ git push origin v1.0.0
 - **Naming:** empfohlen `v1.0.0` (Semantic Versioning); andere Namen erlaubt, müssen aber in der Abgabe-Mail eindeutig benannt sein.
 - **GitHub-Release** auf Basis des Tags ist optional, aber willkommen (Release-Notes als Changelog).
 - **Bewertet wird der Stand des getaggten Commits.** Spätere Commits oder verschobene Tags fließen nicht in die Bewertung ein.
+- **Der Tag muss auf dem Default-Branch liegen** (`main` bzw. `master`). Was allein auf einem Nebenbranch existiert, ist nicht Teil des bewerteten Standes — Feature-Branches also rechtzeitig vor der Abgabe zusammenführen.
 - Der Tag muss **vor Ablauf der M3-Deadline** gesetzt und gepusht sein (geprüft wird Tagger-Date und Commit-Date).
 
 ### 5.3 Abgabe-Mail (durch Projektleiter:in)
@@ -192,7 +193,7 @@ Empfohlen: das **arc42-Template** (https://arc42.org/). Standard-Gliederung:
 11. ~~Risiken und technische Schulden~~ — **entfällt**
 12. Glossar
 
-> **Änderung vom 31.08.2026:** Die Kapitel **10 (Qualitätsanforderungen)** und **11 (Risiken und technische Schulden)** entfallen und müssen nicht angefertigt werden. Beide entfalten ihren Nutzen vor allem in Vorhaben, die über eine Laufzeit von einem Semester hinausgehen und in denen sich Qualitätsziele und technische Schulden über mehrere Ausbaustufen hinweg fortschreiben lassen. Die Qualitätsziele des Systems werden ohnehin in Kapitel 1 benannt. Wer die Kapitel bereits geschrieben hat, muss nichts löschen — sie werden weder positiv noch negativ gewertet. Damit umfasst die Architekturdokumentation die Kapitel **1 bis 9 sowie 12**.
+> Die Kapitel **10 (Qualitätsanforderungen)** und **11 (Risiken und technische Schulden)** entfallen und müssen nicht angefertigt werden. Beide entfalten ihren Nutzen vor allem in Vorhaben, die über eine Laufzeit von einem Semester hinausgehen und in denen sich Qualitätsziele und technische Schulden über mehrere Ausbaustufen hinweg fortschreiben lassen. Die Qualitätsziele des Systems werden ohnehin in Kapitel 1 benannt. Wer die Kapitel bereits geschrieben hat, muss nichts löschen — sie werden weder positiv noch negativ gewertet. Damit umfasst die Architekturdokumentation die Kapitel **1 bis 9 sowie 12**.
 
 #### Architekturentscheidungen (ADRs) — Pflicht
 
@@ -262,7 +263,7 @@ refactor(api): extract validation into middleware
 
 - Commits über die gesamte Projektlaufzeit verteilt — **nicht ein Big-Bang-Push am Abgabetag**.
 - Mehrere Autoren in der Historie sichtbar — jedes Gruppenmitglied committet unter einem **konsistenten, eindeutig zuordenbaren Git-Namen**, sodass Beiträge zugeordnet werden können. Welche E-Mail-Adresse Sie als Commit-Autor:in hinterlegen, bleibt Ihnen überlassen. Anleitung zum Einrichten: [tutorials/git-identity.md](tutorials/git-identity.md).
-- Branches und Pull/Merge Requests sind willkommen, aber nicht zwingend.
+- Branches und Pull/Merge Requests sind willkommen, aber nicht zwingend. **Bewertungsgegenstand ist der Default-Branch** — Arbeit, die bis zur Abgabe nur auf einem Nebenbranch liegt, zählt nicht (siehe Abschnitt 5.2).
 
 Eine Abgabe mit nur wenigen Commits oder nur einem Autor wird als **Indiz für externe Komplettentwicklung (z.B. Bolt, Lovable, v0)** gewertet und führt zu deutlichem Punktabzug in Säule 3 — bis hin zum Nicht-Bestehen, wenn der Code-Walkthrough zeigt, dass die Gruppe das System nicht selbst verstanden und gebaut hat.
 
